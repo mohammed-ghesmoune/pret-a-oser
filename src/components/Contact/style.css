@@ -1,0 +1,104 @@
+.contact-page .header {
+  background-color: var(--pink-color);
+}
+
+.contact-page .thumbnail {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem auto;
+}
+
+.contact-page .content {
+  background-color: var(--light-pink-color);
+  font-size: 1rem !important;
+}
+
+/* .contact-form {
+  background-color: var(--light-pink-color);
+} */
+
+
+.contact-form input[type="text"],
+ .contact-form input[type="email"], 
+ .contact-form input[type="tel"], 
+ .contact-form input[type="password"], 
+ .contact-form textarea {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 5px 5px !important;
+  border: none !important;
+  border-bottom: 1px solid #999 !important;
+  font-style: normal !important;
+  font-family: inherit !important;
+  outline: 0;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  text-transform: none;
+  font-weight: 400;
+  box-sizing: border-box;
+  transition: border .3s ease;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+}
+
+.contact-form button[type="submit"],
+.contact-form input[type="submit"] {
+  display: inline-block;
+  position: relative;
+  outline: 0;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 7px;
+  color: #fff;
+  background-color: pink;
+  border: 1px solid pink;
+  border-radius: 0;
+  font-family: inherit;
+  /* float: right; */
+  transition: color .15s ease-out, background-color .15s ease-out, border-color .15s ease-out;
+  box-sizing: border-box;
+}
+
+.contact-form button[type="submit"]:not(:disabled):hover,
+.contact-form input[type="submit"]:not(:disabled):hover  {
+  color: #fff ;
+  background-color: #111 ;
+  border: 1px solid#111 ;
+}
+
+.contact-form button[type="submit"]:disabled,
+.contact-form input[type="submit"]:disabled{
+  cursor: default !important;
+}
+
+
+.contact-form .message , .message{
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  font-size: 13px ;
+  padding: 1rem ;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-form .message.message-danger, .message.message-danger {
+  background-color: #f8d7da;
+  border: 2px solid #721c24 ;
+  color: #721c24;
+}
+
+.contact-form .message.message-success, .message.message-success {
+  background-color: #d4edda;
+  border: 2px solid #155724 ;
+  color: #155724;
+}

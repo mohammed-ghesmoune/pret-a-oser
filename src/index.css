@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+:root {
+  --white-color: #ffffff;
+  --pink-color:pink;
+  --deep-pink-color:#ff7bc9;
+  --light-pink-color: rgba(255, 192, 203, 0.2);
+  --black-color: #212529;
+  --deep-black-color: #111111;
+}
+
+html{
+  /* font-size: calc(10px + .5vw ); */
+  font-size: 15px;
+}
+
+* {
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+::placeholder{
+  font-size: 13px;
+}
+
+.page-title {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+@media only screen and (max-width: 767px) {
+  html{
+    font-size: 14px !important;
+  }
+  h1, h2{
+    font-size: 22px!important;
+    font-weight: 600 !important;
+  }
+  h3{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+
+  }
+}

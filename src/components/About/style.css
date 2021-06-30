@@ -1,0 +1,19 @@
+.about-page .header {
+  background-color: var(--pink-color);
+}
+
+.about-page .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  ;
+}
+
+.about-page .content {
+  background-color: var(--light-pink-color);
+}
+
+.about-page .content p {
+  line-height: 2rem !important;
+  font-size: 1rem !important;
+}

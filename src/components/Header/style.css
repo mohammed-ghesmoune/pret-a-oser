@@ -1,0 +1,40 @@
+.navbar-brand {
+  font-family: 'Galada', cursive;
+  font-size: 3rem !important;
+  position: relative;
+}
+
+.navbar-brand::after {
+  position: absolute;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  content: 'consultant en image et personal shopper';
+  text-transform: uppercase !important;
+  font-size: .6rem;
+  font-weight: 500;
+  bottom:5px;
+  left:-5px;
+  color: var(--deep-pink-color);
+}
+
+.navbar-nav li a {
+  text-transform: uppercase !important;
+  color: var(--black-color) !important;
+  /* letter-spacing: .1rem;  */
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  cursor: pointer;
+}
+
+
+.navbar-nav li a:hover , .navbar-nav li a.active {
+  color: var(--deep-pink-color) !important;
+}
+
+
+.navbar-toggler {
+  border: none !important;
+  left: 0;
+  top: 1rem;
+}
+

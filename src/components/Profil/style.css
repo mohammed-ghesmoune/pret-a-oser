@@ -1,0 +1,10 @@
+.profil-page .header{
+  background-color: var(--pink-color);
+}
+.profil-page .content {
+  background-color: var(--light-pink-color);
+}
+.profil-page .content .title{
+font-weight: bold !important;
+text-transform: capitalize;
+}

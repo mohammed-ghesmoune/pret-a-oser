@@ -1,0 +1,82 @@
+:root {
+  --overlay-color: rgba(11, 12, 12, 0.6);
+  --background-color: rgba(255, 192, 203, 0.1)
+}
+
+/* FRONT PAGE */
+
+.front-page .thumbnail {
+   /* height: calc(100vh - 150px);  */
+  height: 500px; 
+  background-blend-mode: overlay;
+  background-color: var(--overlay-color);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-page .thumbnail .header {
+  padding: 3rem;
+  border: 2px solid var(--white-color);
+  margin: 2rem;
+}
+
+.front-page .thumbnail .header .name {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--white-color);
+}
+
+.front-page .thumbnail .header .description {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.front-page .content {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.front-page .content ul {
+  padding:0;
+}
+.front-page .content li::marker {
+  color: var(--deep-pink-color) !important;
+  font-size: 16px;
+}
+
+.front-page .content li {
+  padding-bottom: 14px;
+  font-size: 1rem !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .front-page .thumbnail {
+     height: calc(100vh - 150px);  
+    /* height: 500px;  */
+  }
+  .front-page .thumbnail .header .name {
+    font-size: 4rem;
+  }
+
+  .front-page .thumbnail .header .description {
+    font-size: 1rem;
+
+  }
+}

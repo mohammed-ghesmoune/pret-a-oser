@@ -1,0 +1,241 @@
+.testimonialTitle, .prestationTitle, .pageTitle , .categoryTitle {
+  display: block;
+  text-transform: capitalize;
+}
+
+.testimonialTitle:hover, .prestationTitle:hover, .pageTitle:hover, .categoryTitle:hover {
+  text-decoration: underline;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.edit:hover, .remove:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.edit {
+  color: blue;
+}
+
+.remove {
+  color: red;
+}
+
+.admin-icon {
+  color: inherit;
+  font-size: 1.2rem;
+  margin-right: .5rem;
+}
+
+.admin-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 95vh;
+}
+
+.admin-sidenav {
+  align-self: stretch;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #111;
+  padding-top: 20px;
+}
+
+.admin-content {
+  flex-basis: auto;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.admin-sidenav a {
+  padding: 10px 8px 10px 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.admin-sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.admin-sidenav a.active {
+  background-color: pink;
+}
+
+.admin-sidenav a span {
+  padding-right: 8px;
+}
+
+.admin-sidenav .dropdown-content {
+  background-color: #333333;
+  height:0;
+  width:0; 
+  overflow: hidden;
+  /* display: none; */
+  z-index: 1;
+}
+
+
+
+.admin-sidenav .dropdown-content a {
+  padding-left: 30px;
+  font-size: .8rem;
+}
+
+.admin-sidenav .dropdown-content a.active {
+  background-color: inherit;
+  color: pink;
+}
+
+.admin-sidenav .dropdown-wrapper {
+  position: relative;
+}
+
+.admin-sidenav .show {
+  height:auto;
+  width:auto; 
+}
+
+@media screen and (max-width: 767px) {
+
+  .admin-sidenav{
+    width: 40px;
+  }
+  .admin-sidenav .dropdown-wrapper:hover .dropdown-content {
+    height:auto;
+    min-height: 45px;
+    position: absolute;
+    width: 150px;
+    top:0;
+    left: 40px;
+  }
+
+  .admin-sidenav .dropdown-wrapper:hover .dropdown-btn {
+   background-color: pink;
+  }
+ 
+  .admin-sidenav .show {
+    height:0;
+    width:0; 
+    overflow: hidden;
+  }
+
+  .admin-sidenav a span {
+    display: none;
+  }
+
+ 
+}
+
+/* .testimonialTitle, .prestationTitle, .pageTitle {
+  display: block;
+  text-transform: capitalize;
+}
+
+.testimonialTitle:hover, .prestationTitle:hover, .pageTitle:hover {
+  text-decoration: underline;
+  color: darkgray;
+  cursor: pointer;
+}
+
+.edit:hover, .remove:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.edit {
+  color: blue;
+}
+
+.remove {
+  color: red;
+}
+
+.admin-icon {
+  color: inherit;
+  font-size: 1.2rem;
+  margin-right: .5rem;
+}
+
+.admin-content {
+  margin-left: 200px;
+}
+
+.admin-sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.admin-sidenav>ul {
+  list-style-type: none;
+  padding-left: 0rem;
+}
+
+.admin-sidenav ul.collapse {
+  list-style-type: none;
+  background-color: #333;
+  padding-left: 1rem;
+  
+}
+
+.admin-sidenav ul.collapse.toggleHeight {
+ 
+  height: 100px;
+}
+
+
+.admin-sidenav ul.collapse li {
+  padding-left: 1rem;
+}
+
+.admin-sidenav li {
+  line-height: 1.5rem;
+}
+
+.admin-sidenav a {
+  padding: 6px 8px 10px 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.admin-sidenav a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-width : 767px) {
+  .admin-sidenav ul li span {
+    display: none;
+  }
+  .admin-sidenav{
+    width: 40px;
+  }
+
+  .admin-content{
+    margin-left: 40px;
+  }
+
+} */

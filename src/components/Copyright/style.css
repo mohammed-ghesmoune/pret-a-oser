@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.copyright-section {
+  background-color: #000 !important;
+  z-index: 10;
+}
+.copyright , .copyright a {
+  font-size: 13px;
+  color: white;
+}
+
+.back-to-top {
+  visibility:hidden;
+  opacity:0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 12px !important;
+  right: 17px;
+  bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  z-index: 99;
+  height: 30px;
+  width: 30px;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: All 0.1s linear, bottom 0.1s linear;
+}
+
+.back-to-top:hover {
+  background-color: #d1b7b2;
+}
